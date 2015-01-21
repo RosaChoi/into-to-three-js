@@ -81,14 +81,14 @@ function render() {
   camera.lookAt( scene.position );
 
 
-  var time = Date.now() * 0.0015;
-
-  for ( var i = 0; i < scene.children.length; i ++ ) {
-
-    var object = scene.children[ i ];
-    if ( object instanceof THREE.CubeGeometry ) object.rotation.y = time * ( i % 2 ? 1 : -1 );
-
-  }
+  // var time = Date.now() * 0.0015;
+  //
+  // for ( var i = 0; i < scene.children.length; i ++ ) {
+  //
+  //   var object = scene.children[ i ];
+  //   if ( object instanceof THREE.CubeGeometry ) object.rotation.y = time * ( i % 2 ? 1 : -1 );
+  //
+  // }
 
   renderer.render( scene, camera );
 }
